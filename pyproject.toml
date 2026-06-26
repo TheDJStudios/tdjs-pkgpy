@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pkgpy-manager"
+version = "0.1.0"
+description = "TheDJStudios Python package manager"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests",
+]
+
+[tool.setuptools]
+py-modules = ["manager"]
