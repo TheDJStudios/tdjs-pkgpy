@@ -1,7 +1,7 @@
 {
-  "tdjs_toolkit": {
+  "tdjs-toolkit": {
     "latest": "0.0.4",
-    "0.0.4": "simple/tdjs_toolkit/tdjs_toolkit-0.0.4-py3-none-any.whl"
+    "0.0.4": "simple/tdjs-toolkit/tdjs_toolkit-0.0.4-py3-none-any.whl"
   },
   "vatrix": {
     "latest": "To be added",
