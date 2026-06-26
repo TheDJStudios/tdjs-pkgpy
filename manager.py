@@ -38,6 +38,7 @@ root.geometry("600x1000")
 
 
 def download(verdir: str, pkgname:str):
+    print(url+verdir)
     with urlopen(url+verdir) as response:
         data = response.read()
 
@@ -87,8 +88,12 @@ for num, package in enumerate(directory):
         if vers == "latest":
             tk.Label(text=pack[vers]).grid(column=1, row=pos + (i + 1), padx=5, pady=1)
             a = pack[pack[vers]]
+            if a == "null" or a is None:
+                installed = True
         else:
             a = location
+            if pack[vers] is None or pack[vers] == "null":
+                installed = True
 
         dbtn = tk.Button(root, text="Install", command=lambda loc=a, nm = package: downnin(loc,nm))
         dbtn.config(state="normal" if not installed else "disabled")
